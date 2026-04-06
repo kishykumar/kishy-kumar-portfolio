@@ -80,3 +80,7 @@ For a completely free ".tk" domain as requested:
 ## Credits
 
 Designed with inspiration from modern web applications including Linear and Raycast.
+
+---
+
+Last updated: 2026-04-06
