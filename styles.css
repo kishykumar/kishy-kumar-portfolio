@@ -348,3 +348,61 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* Selected Work */
+.selected-section {
+    margin-bottom: 80px;
+}
+
+.selected-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.selected-item {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.selected-item:last-child {
+    border-bottom: none;
+}
+
+.selected-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.selected-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.selected-item .tags {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Service */
+.service-section {
+    margin-bottom: 80px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.service-item {
+    font-size: 0.95rem;
+    color: #555;
+    padding-left: 16px;
+    border-left: 2px solid #e5e5e5;
+}
