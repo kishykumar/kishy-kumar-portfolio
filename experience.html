@@ -4,89 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Kishy Kumar</title>
-    <meta name="description" content="Kishy Kumar's professional experience at Oracle and career progression in database systems and distributed computing.">
+    <meta name="description" content="Kishy Kumar's professional experience at Oracle.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="noise"></div>
-
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">KK</a>
-            <div class="nav-links">
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="logo">Kishy Kumar</a>
+            <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="experience.html" class="active">Experience</a>
                 <a href="work.html">Work</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="contact.html" class="nav-cta">Contact</a>
-            </div>
-        </div>
-    </nav>
+                <a href="blogs.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <!-- Experience -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+        <main>
+            <section class="content-section">
+                <h1 class="page-title">Experience</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
                         <div class="timeline-header">
-                            <h3>Director of Engineering</h3>
-                            <span class="timeline-company">Oracle</span>
+                            <h2>Director of Engineering</h2>
+                            <span class="company">Oracle</span>
                         </div>
-                        <p class="timeline-date">Present</p>
-                        <p class="timeline-desc">
-                            Lead engineering teams responsible for Mission-Critical Transactions technology in Oracle Database. Drive development of JSON-Relational Duality, a revolutionary feature that unifies JSON documents and relational tables. Setting technical direction for scalability and reliability of enterprise database workloads.
-                        </p>
-                        <div class="timeline-tags">
-                            <span>Database Systems</span>
-                            <span>Distributed Systems</span>
-                            <span>Leadership</span>
+                        <div class="timeline-date">Present</div>
+                        <p>Lead engineering teams responsible for Mission-Critical Transactions technology in Oracle Database. Drive development of JSON-Relational Duality, a revolutionary feature that unifies JSON documents and relational tables. Setting technical direction for scalability and reliability of enterprise database workloads.</p>
+                        <ul class="tags">
+                            <li>Database Systems</li>
+                            <li>Distributed Systems</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h2>Engineering Manager → Principal Engineer</h2>
+                            <span class="company">Oracle</span>
                         </div>
+                        <div class="timeline-date">~2016-2022</div>
+                        <p>Built cloud database infrastructure during Oracle's cloud transition. Pioneered resource management for flash devices (SSD caching). Led Priority Transactions feature for high-value transaction processing. Advanced through roles based on technical impact and leadership.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h2>Software Engineer</h2>
+                            <span class="company">Oracle</span>
+                        </div>
+                        <div class="timeline-date">~2013-2016</div>
+                        <p>Started in storage and performance engineering. Developed I/O resource management algorithms and contributed to early cloud database deployments.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Engineering Manager → Principal Engineer</h3>
-                            <span class="timeline-company">Oracle</span>
-                        </div>
-                        <p class="timeline-date">~2016-2022</p>
-                        <p class="timeline-desc">
-                            Built cloud database infrastructure during Oracle's cloud transition. Pioneered resource management for flash devices (SSD caching). Led Priority Transactions feature for high-value transaction processing. Advanced through roles based on technical impact and leadership.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Engineer</h3>
-                            <span class="timeline-company">Oracle</span>
-                        </div>
-                        <p class="timeline-date">~2013-2016</p>
-                        <p class="timeline-desc">
-                            Started in storage and performance engineering. Developed I/O resource management algorithms and contributed to early cloud database deployments.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+        <footer class="footer">
             <p>© 2026 Kishy Kumar</p>
-            <p>Director of Engineering, Oracle</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
