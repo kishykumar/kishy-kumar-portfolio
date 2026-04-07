@@ -178,14 +178,39 @@ p {
 /* Hero */
 .hero {
     min-height: 100vh;
+    padding-top: 80px;
+}
+
+.hero-container {
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 .hero-content {
     flex: 1;
-    padding: 0 60px 0 32px;
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-avatar {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 40px 80px -20px var(--accent-glow);
 }
 
 .hero-badge {
