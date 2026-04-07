@@ -132,6 +132,11 @@ p {
     color: var(--text);
 }
 
+.nav-links a.active {
+    color: var(--text);
+    font-weight: 600;
+}
+
 .nav-cta {
     background: var(--accent);
     color: white !important;
