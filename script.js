@@ -1,35 +1,26 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
     });
-});
 
-// Add subtle scroll animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
+    // Close menu when clicking a link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
     });
-}, observerOptions);
+}
 
-document.querySelectorAll('.section-title, .project-card, .skill-category, .accomplishment-card, .timeline-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+// Close menu when pressing Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
 });
