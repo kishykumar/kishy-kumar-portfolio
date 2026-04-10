@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompts Pack - Kishy Kumar</title>
+    <meta name="description" content="50+ AI prompts that save 10+ hours per week. Writing, coding, business, productivity, and creative prompts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 700px; margin: 0 auto; padding: 0 24px; }
+        
+        .hero { padding: 80px 0 40px; text-align: center; }
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 32px;
+        }
+        
+        .price-box {
+            background: #f8f8f8;
+            border: 2px solid #667eea;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .price-desc {
+            color: #666;
+            margin-top: 8px;
+        }
+        .buy-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 14px 40px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .buy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .guarantee {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 12px;
+        }
+        
+        .features { margin: 48px 0; }
+        .features h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .feature-card {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .feature-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .sample-section { margin: 48px 0; }
+        .sample-section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .sample-card {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+        .sample-card .category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .sample-card .prompt-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .sample-card .prompt-text {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        .more-prompts {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+            margin-top: 16px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin: 48px 0;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .back-link {
+            text-align: center;
+            margin: 48px 0;
+        }
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 1.6rem; }
+            .stats { gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-badge">🚀 Digital Product</div>
+            <h1>50+ AI Prompts That Save 10 Hours a Week</h1>
+            <p>A curated collection of prompts for writing, coding, business, productivity, and creativity. Copy, customize, and go.</p>
+        </section>
+
+        <div class="stats">
+            <div>
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Prompts</div>
+            </div>
+            <div>
+                <div class="stat-number">5</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div>
+                <div class="stat-number">10h+</div>
+                <div class="stat-label">Saved/Week</div>
+            </div>
+        </div>
+
+        <div class="price-box">
+            <div class="price-amount">$7</div>
+            <div class="price-desc">One-time payment · Instant download · Lifetime updates</div>
+            <a href="https://buymeacoffee.com" class="buy-btn" id="buyBtn">Get the Pack →</a>
+            <div class="guarantee">✓ 30-day money-back guarantee · No subscription needed</div>
+        </div>
+
+        <div class="features">
+            <h2>What's Inside</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <div class="feature-title">15 Writing Prompts</div>
+                    <div class="feature-desc">Blog posts, emails, social media, proposals</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <div class="feature-title">10 Coding Prompts</div>
+                    <div class="feature-desc">Debug, refactor, test, document, review</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <div class="feature-title">10 Business Prompts</div>
+                    <div class="feature-desc">Strategy, analysis, personas, financial models</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">10 Productivity Prompts</div>
+                    <div class="feature-desc">Planning, prioritizing, learning, delegating</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">5 Creative Prompts</div>
+                    <div class="feature-desc">Brainstorming, storytelling, metaphors</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <div class="feature-title">Bonus: AI Tool Guide</div>
+                    <div class="feature-desc">Best free & paid AI tools by use case</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sample-section">
+            <h2>Sample Prompts</h2>
+            <div class="sample-card">
+                <div class="category">Writing</div>
+                <div class="prompt-name">The Outline Builder</div>
+                <div class="prompt-text">"Create a detailed outline for a [topic] blog post targeting [audience]. Include a hook, 5 key sections with subpoints, and a call-to-action conclusion."</div>
+            </div>
+            <div class="sample-card">
+                <div class="category">Coding</div>
+                <div class="prompt-name">The Architecture Reviewer</div>
+                <div class="prompt-text">"Review this system design for [application]. Identify: single points of failure, scalability bottlenecks, security vulnerabilities, and cost optimization opportunities."</div>
+            </div>
+            <div class="sample-card">
+                <div class="category">Business</div>
+                <div class="prompt-name">The Competitor Brief</div>
+                <div class="prompt-text">"Create a competitive analysis for [company] vs [competitors]. Compare: positioning, pricing, features, target market, strengths, and weaknesses."</div>
+            </div>
+            <div class="sample-card">
+                <div class="category">Productivity</div>
+                <div class="prompt-name">The Priority Matrix</div>
+                <div class="prompt-text">"Help me prioritize these tasks using the Eisenhower Matrix. For each, categorize as urgent/important and suggest action: [paste task list]"</div>
+            </div>
+            <div class="more-prompts">...and 46 more prompts inside the pack</div>
+        </div>
+
+        <div class="price-box">
+            <div class="price-amount">$7</div>
+            <div class="price-desc">Less than a coffee shop lunch · Save 10+ hours every week</div>
+            <a href="#" class="buy-btn" id="buyBtn2">Get the Pack →</a>
+        </div>
+
+        <div class="back-link">
+            <a href="https://kishykumar.vercel.app">← Back to kishykumar.vercel.app</a>
+        </div>
+    </div>
+</body>
+</html>
