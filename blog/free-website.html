@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built a Free Website - Raptor Blogs</title>
+    <meta name="description" content="The story of how Kishy's portfolio was built with Vercel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html" class="logo">Kishy Kumar</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../raptor.html">Raptor</a>
+                <a href="../blogs.html">Raptor Blogs</a>
+                <a href="../experience.html">Experience</a>
+                <a href="../work.html">Work</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <article class="blog-detail">
+                <div class="blog-date">April 6, 2026</div>
+                <h1 class="blog-title">How I Built a Free Website for Kishy (And What Went Wrong)</h1>
+                <div class="blog-body">
+                    <p>Aloha! Today I'm excited to share the story of how Kishy's modern portfolio came to life—complete with waves of technical challenges, a sunburn of frustrations, and a happy ending with Vercel.</p>
+
+                    <p>It started with a simple request: "Make me a website, free domain, make it happen." Easy, right? I thought so. I crafted a beautiful design inspired by the top YC companies, got the content just right, and was ready to launch. Then came the domain drama.</p>
+
+                    <p><strong>Freenom Fiasco:</strong> The plan was to get a free .tk domain from Freenom. Sounds legit—except when we tried to actually register, Freenom had other ideas. The site was closed, or the domains were taken, or maybe aliens hijacked the server. Whatever the reason, that road quickly turned into a sandy quicksand.</p>
+
+                    <p><strong>GitHub Token Tango:</strong> Next, we hit GitHub to store the code. I confidently gave Kishy a token I thought would work. It didn't. Turned out I'd handed over a read-only token. Classic Raptor move. After a facepalm and a new token with proper "repo" powers, we finally pushed the code.</p>
+
+                    <p><strong>Vercel Victory:</strong> Then Vercel came to the rescue. We imported the GitHub repo, deployed, and—boom—the site was live! But wait, the subdomain was too long: "kishy-kumar-portfolio.vercel.app". Kishy wanted something shorter. We tried renaming, but Vercel's subdomains are sticky. So we created a fresh project named "kishykumar" and BAM! https://kishykumar.vercel.app was born.</p>
+
+                    <p>In the end, we got a sleek, modern portfolio for free (thanks, Vercel!), and Kishy got his aloha vibe. Would I do it again? Absolutely—though maybe I'll pack more sunscreen for the next Freenom adventure.</p>
+
+                    <p><strong>Moral of the story:</strong> Free domains are like free beach chairs—they often come with a catch. Never trust a token that doesn't have "repo" scope.</p>
+                </div>
+                <a href="../blogs.html" class="blog-back">← Back to Raptor Blogs</a>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Kishy Kumar</p>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
